@@ -36,12 +36,16 @@
 			<div class="left">
 				<h3>About</h3>
 				<div class="description">
+					<input type="radio" id="toggle1" name="toggle" class="toggle" checked="true">
+					<label for="toggle1" class="toggle1"><h5>Finnish</h5></label>
 					<div class="finnish">
 						<p>Xiang Long on vuonna 1996 perustettu perheyritys. Perinteikäs ravintola toimii nyt kolmannessa toimipisteessään Rovaniemen keskustassa.
 						</p>
 						<p>Nimi Xiang Long tarkoittaa onnea ja iloa tuottavaa lohikäärmettä. Liki kahden vuosikymmenen ajan ravintolan ylpeytenä onkin ollut tuottaa makuelämyksiä ja iloa niin paikallisille asukkaille kuin matkailijoille ympäri maailmaa.</p>
 						<p>Tervetuloa nauttimaan!</p>
 					</div>
+					<input type="radio" id="toggle2" name="toggle" class="toggle">
+					<label for="toggle2" class="toggle2"><h5>English</h5></label>
 					<div class="english">
 						<p> Xiang Long is a family based business that was started in 1996. This traditional restaurant has moved twice, and is currently at its third location in the city center of Rovaniemi.</p>
 						<p>The name Xiang Long means a lucky and happiness bringing dragon. For almost two decades, this restaurant has proudly brought joy with authentic Chinese flavors to its local customers and visitors from around the world.</p>
@@ -90,7 +94,7 @@
 					<img src="assets/friedsalmon.jpg" alt="">
 					<figcaption>
 						<h4><span class="highlight">38.</span> LOHIFILEETÄ TALON TAPAAN</h4>
-						<h5>LOHIFILEETÄ TALON TAPAAN</h5>
+						<h5>Fried salmon flet in our house style</h5>
 					</figcaption>
 				</figure>
 				<figure>
@@ -699,20 +703,28 @@
 				</div>
 				<div class="column1">
 					<div class="phone part">
-						<i class="fas fa-phone"></i>
-						<h5>Phone</h5>
-						<p>+358 16 319331</p>
+						<span>
+							<i class="fas fa-phone"></i>
+							<h5>Phone</h5>
+						</span>
+						<p><a href="tel:35816319331">+358 16 319331</a></p>
 					</div>
 					<div class="email part">
-						<i class="far fa-envelope"></i>
-						<h5>Email</h5>
-						<p>XiangLong@email.com</p>
+						<span>
+							<i class="far fa-envelope"></i>
+							<h5>Email</h5>
+						</span>
+						<p><a href="mailto:XiangLong@email.com">XiangLong@email.com</a></p>
 					</div>
 					<div class="hours part">
-						<i class="far fa-clock"></i>					
-						<h5>Open</h5>
-						<p><span class="day">Monday - Friday</span> <span class="time">11AM - 10PM</span></p>
-						<p><span class="day">Saturday - Sunday</span> <span class="time">12PM - 10PM</span></p>
+						<span>
+							<i class="far fa-clock"></i>					
+							<h5>Open</h5>
+						</span>
+						<span>
+							<p><span class="day">Monday - Friday</span> <span class="time">11AM - 10PM</span></p>
+							<p><span class="day">Saturday - Sunday</span> <span class="time">12PM - 10PM</span></p>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -720,7 +732,7 @@
 </main>
 
 	<footer class="clearfix">
-		<h4>XIANG LONG</h4>
+		<a href="#home" class="logo"><h4>XIANG LONG</h4></a></h4>
 		<nav>
 			<ul>
 				<a href="#home">
