@@ -75,7 +75,7 @@ header {
 		right: 0;
 		position: absolute;
 		color: $primary;
-		border: 2px solid $primary;
+		border: 1px solid $primary;
 		padding: 5px;
 	}
 	.toggle1 {
@@ -298,6 +298,10 @@ footer {
 		}
 		.right {
 			display: none;
+		}
+		.toggle1 {
+			top: -110px;
+			right: 0px;
 		}
 	}
 	.container {

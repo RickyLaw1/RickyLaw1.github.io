@@ -291,7 +291,7 @@ header {
     right: 0;
     position: absolute;
     color: darkred;
-    border: 2px solid darkred;
+    border: 1px solid darkred;
     padding: 5px; }
   .about .toggle1 {
     right: 90px; }
@@ -495,6 +495,9 @@ footer {
     width: 100%; }
   .about .right {
     display: none; }
+  .about .toggle1 {
+    top: -110px;
+    right: 0px; }
   .container h3 {
     width: 90%; }
   .menu .page li {
