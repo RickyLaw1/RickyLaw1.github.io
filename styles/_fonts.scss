@@ -1,0 +1,26 @@
+h1 {
+	font-size: 90px; 
+	font-weight: 300;
+	font-family: serif;
+	letter-spacing: 40px;
+}
+h2 {
+	font-size: 75px; 
+	font-weight: 300;
+	color: $secondary;
+	text-shadow: 0 0 100px $secondary;
+	letter-spacing: 20px;
+}
+h3 {
+	font-size: 35px;
+	letter-spacing: 20px;
+	color: $primary;
+	text-transform: uppercase;
+	border-bottom: 3px solid $primary;
+	padding: 40px 0;
+	margin-bottom: 25px;
+}
+h4 {font-size: 24px;}
+h5 {font-size: 18px; font-weight: 300;}
+h6 {font-size: 13px;}
+p {line-height: 30px; color: $primary}
