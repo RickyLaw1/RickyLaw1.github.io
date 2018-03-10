@@ -61,8 +61,7 @@ header {
 	}
 	.right {
 		@extend .left;
-		padding: 0 5%;
-		padding-top: 160px;
+		padding: 0 5%;	
 	}
 	p { 
 		padding: 7px;
@@ -194,15 +193,6 @@ header {
 	}
 }
 
-// .page {
-// 	height: 0;
-// }
-// .page:nth-child(1) {
-// 	height: 100px;
-// }
-// .page:nth-child(2) {
-// 	height: 1000px;
-// }
 // Contact Section
 .contact {
 	margin: auto;
@@ -299,10 +289,7 @@ footer {
 		.right {
 			display: none;
 		}
-		.toggle1 {
-			top: -110px;
-			right: 0px;
-		}
+
 	}
 	.container {
 		h3 {
@@ -345,6 +332,15 @@ footer {
 	.container {
 		img {
 			height: 350px;
+		}
+	}
+	.about {
+		.toggle1 {
+			top: -84px;
+			right: 0px;
+		}
+		.toggle2 {
+			top: -50px;
 		}
 	}
 	.menu .wrapper {

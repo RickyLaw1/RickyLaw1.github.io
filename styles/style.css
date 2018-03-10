@@ -297,8 +297,7 @@ header {
     width: 50%;
     float: left; }
   .about .right {
-    padding: 0 5%;
-    padding-top: 160px; }
+    padding: 0 5%; }
   .about p {
     padding: 7px; }
   .about img {
@@ -507,9 +506,6 @@ footer {
     width: 100%; }
   .about .right {
     display: none; }
-  .about .toggle1 {
-    top: -110px;
-    right: 0px; }
   .container h3 {
     width: 90%; }
   .menu .page li {
@@ -554,6 +550,11 @@ footer {
 @media (max-width: 590px) {
   .container img {
     height: 350px; }
+  .about .toggle1 {
+    top: -84px;
+    right: 0px; }
+  .about .toggle2 {
+    top: -50px; }
   .menu .wrapper {
     padding: 0; }
     .menu .wrapper ol {
