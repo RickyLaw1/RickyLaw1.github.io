@@ -38,7 +38,7 @@
 				<h3>About</h3>
 				<div class="description">
 					<input type="radio" id="toggle1" name="toggle" class="toggle" checked="true">
-					<label for="toggle1" class="toggle1"><h5>Finnish</h5></label>
+					<label for="toggle1" class="toggle1"><h5>FINNISH</h5></label>
 					<div class="finnish">
 						<p>Xiang Long on vuonna 1996 perustettu perheyritys. Perinteikäs ravintola toimii nyt kolmannessa toimipisteessään Rovaniemen keskustassa.
 						</p>
@@ -46,7 +46,7 @@
 						<p>Tervetuloa nauttimaan!</p>
 					</div>
 					<input type="radio" id="toggle2" name="toggle" class="toggle">
-					<label for="toggle2" class="toggle2"><h5>English</h5></label>
+					<label for="toggle2" class="toggle2"><h5>ENGLISH</h5></label>
 					<div class="english">
 						<p> Xiang Long is a family based business that was started in 1996. This traditional restaurant has moved twice, and is currently at its third location in the city center of Rovaniemi.</p>
 						<p>The name Xiang Long means a lucky and happiness bringing dragon. For almost two decades, this restaurant has proudly brought joy with authentic Chinese flavors to its local customers and visitors from around the world.</p>
@@ -765,13 +765,12 @@
 	    	$('.gallery').flickity({
            		wrapAround: true, 
            		contain: true, 
-           		adaptiveHeight: true, 
            		autoPlay: 5000
 	        });
 			$('.menuGallery').flickity({
            		wrapAround: true, 
-           		contain: true, 
-           		adaptiveHeight: true, 
+           		adaptiveHeight: true,
+           		prevNextButtons: false,
            		autoPlay: 5000
 	        });
 	        $("a").smoothScroll();

@@ -213,6 +213,23 @@ p {
   line-height: 30px;
   color: darkred; }
 
+@media (max-width: 1016px) {
+  h1, h2 {
+    font-size: 40px;
+    letter-spacing: 20px; } }
+
+@media (max-width: 590px) {
+  h3 {
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 10px; }
+  h4 {
+    font-size: 20px; }
+  h5 {
+    font-size: 14px; }
+  p {
+    font-size: 15px; } }
+
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -294,7 +311,7 @@ header {
     border: 1px solid darkred;
     padding: 5px; }
   .about .toggle1 {
-    right: 90px; }
+    right: 100px; }
   .about .toggle {
     display: none; }
   .about .finnish {
@@ -363,8 +380,6 @@ header {
     padding: 0 10%; }
   .menu .page, .menu .food, .menu ol {
     width: 100%; }
-  .menu .page {
-    height: auto; }
   .menu .food ol {
     list-style-type: none;
     display: -webkit-box;
@@ -477,9 +492,6 @@ footer {
       text-decoration: underline; }
 
 @media (max-width: 1016px) {
-  header h1, header h2 {
-    font-size: 60px;
-    letter-spacing: 20px; }
   header ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -545,9 +557,12 @@ footer {
   .menu .wrapper {
     padding: 0; }
     .menu .wrapper ol {
-      padding: 0; }
-    .menu .wrapper li {
-      margin-right: 0; }
+      padding: 0 10px; }
+    .menu .wrapper .food li {
+      margin-right: 0;
+      width: 100%; }
+    .menu .wrapper img {
+      width: 60px; }
   .contact .column1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -564,14 +579,22 @@ footer {
   .mobile {
     display: block;
     margin-bottom: 20px; }
-  footer .logo {
-    width: 100%;
-    text-align: center;
-    margin: auto; }
-  footer nav, footer .social {
-    width: 100%; }
-  footer ul {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+    footer .logo {
+      width: 100%;
+      text-align: center;
+      margin: auto; }
+    footer nav, footer .social {
+      width: 100%; }
+    footer ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }

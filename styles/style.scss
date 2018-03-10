@@ -79,7 +79,7 @@ header {
 		padding: 5px;
 	}
 	.toggle1 {
-		right: 90px;
+		right: 100px;
 	}
 	.toggle {
 		display: none;
@@ -94,7 +94,6 @@ header {
 		& + label {
 			background-color: $primary;
 			color: $secondary;
-			// text-decoration: underline;
 			transition: 0.2s;
 		}
 	}
@@ -108,7 +107,6 @@ header {
 		& + label {
 			background-color: $primary;
 			color: $secondary;
-			// text-decoration: underline;
 			transition: 0.2s;
 		}
 	}
@@ -168,9 +166,6 @@ header {
 	.page, .food, ol {
 		width: 100%;
 	}
-	.page {
-		height: auto;
-	}
 	.food ol {
 		list-style-type: none;
 		display: flex;
@@ -199,6 +194,15 @@ header {
 	}
 }
 
+// .page {
+// 	height: 0;
+// }
+// .page:nth-child(1) {
+// 	height: 100px;
+// }
+// .page:nth-child(2) {
+// 	height: 1000px;
+// }
 // Contact Section
 .contact {
 	margin: auto;
@@ -279,10 +283,6 @@ footer {
 
 @media (max-width:1016px) {
 	header {
-		h1, h2 {
-			font-size: 60px;
-			letter-spacing: 20px;
-		}
 		ul {
 			flex-direction: column;
 			align-items: center;
@@ -350,10 +350,14 @@ footer {
 	.menu .wrapper {
 		padding: 0;
 		ol {
-			padding: 0;
+			padding: 0 10px;
 		}
-		li {
+		.food li {
 			margin-right: 0;
+			width: 100%;
+		}
+		img {
+			width: 60px;
 		}
 	}
 	.contact {
@@ -374,6 +378,8 @@ footer {
 		margin-bottom: 20px;
 	}
 	footer {
+		display: flex;
+		flex-direction: column;
 		.logo {
 			width: 100%;
 			text-align: center;
