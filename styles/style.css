@@ -401,10 +401,17 @@ header {
     justify-content: space-between; }
     .menu .item span {
       color: darkred; }
+  .menu .highlight {
+    font-weight: 600; }
   .menu h6 {
     color: darkred; }
   .menu img {
     width: 100px; }
+  .menu i {
+    display: none; }
+
+input.foodToggle {
+  display: none; }
 
 .contact {
   margin: auto;
@@ -558,12 +565,43 @@ footer {
   .menu .wrapper {
     padding: 0; }
     .menu .wrapper ol {
-      padding: 0 10px; }
+      padding: 0 10px;
+      display: none; }
     .menu .wrapper .food li {
       margin-right: 0;
       width: 100%; }
     .menu .wrapper img {
-      width: 60px; }
+      width: 60px;
+      display: none; }
+    .menu .wrapper h4 {
+      font-size: 18px;
+      padding: 10px;
+      padding-right: 20px;
+      margin-bottom: 5px;
+      border: 1px solid darkred;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      position: relative;
+      color: darkred;
+      font-weight: 500; }
+    .menu .wrapper i {
+      display: inline-block; }
+    .menu .wrapper .food i {
+      color: darkred;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .menu .wrapper input.foodToggle:checked ~ ol {
+      display: block; }
+    .menu .wrapper input.foodToggle:checked + label h4 {
+      background-color: darkred;
+      color: white; }
+      .menu .wrapper input.foodToggle:checked + label h4 span {
+        color: inherit; }
   .contact .column1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

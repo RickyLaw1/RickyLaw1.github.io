@@ -185,13 +185,23 @@ header {
 			color: $primary;
 		}
 	}
+	.highlight {
+		font-weight: 600;
+	}
 	h6 {
 		color: $primary;		
 	}
 	img {
 		width: 100px;
 	}
+	i {
+		display: none;
+	}
 }
+input.foodToggle {
+	display: none;
+}
+
 
 // Contact Section
 .contact {
@@ -344,9 +354,10 @@ footer {
 		}
 	}
 	.menu .wrapper {
-		padding: 0;
+		padding: 0;		
 		ol {
 			padding: 0 10px;
+			display: none;
 		}
 		.food li {
 			margin-right: 0;
@@ -354,8 +365,45 @@ footer {
 		}
 		img {
 			width: 60px;
+			display: none;
+		}
+		h4 {
+			font-size: 18px;
+			padding: 10px;
+			padding-right: 20px;
+			margin-bottom: 5px;
+			border: 1px solid $primary;
+			transition: 0.2s;
+			position: relative;	
+			color: $primary;
+			font-weight: 500;
+		}
+		i {
+			display: inline-block;
+		}
+		.food i {
+			color: $primary;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);			
+		}
+		input.foodToggle:checked {
+			& ~ ol {
+				display: block;
+			}
+			& + label h4 {
+				background-color: $primary;
+				color: $secondary;
+				
+				span {
+					color: inherit;
+				}
+			}
 		}
 	}
+
+
 	.contact {
 		.column1 {
 			flex-direction: column;
