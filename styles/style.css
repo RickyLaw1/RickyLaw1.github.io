@@ -578,9 +578,15 @@ footer {
       padding-right: 20px;
       margin-bottom: 5px;
       border: 1px solid darkred;
+<<<<<<< HEAD
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
+=======
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+>>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
       position: relative;
       color: darkred;
       font-weight: 500; }
@@ -590,6 +596,7 @@ footer {
       color: darkred;
       position: absolute;
       right: 15px;
+<<<<<<< HEAD
       top: 45%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -598,6 +605,12 @@ footer {
       -o-transition: 0.7s;
       transition: 0.7s;
       font-size: 12px; }
+=======
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+>>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
     .menu .wrapper input.foodToggle:checked ~ ol {
       display: block; }
     .menu .wrapper input.foodToggle:checked + label h4 {
@@ -605,6 +618,7 @@ footer {
       color: white; }
       .menu .wrapper input.foodToggle:checked + label h4 span {
         color: inherit; }
+<<<<<<< HEAD
     .menu .wrapper input.foodToggle:checked ~ label .drop1 {
       color: white; }
     .menu .wrapper input.foodToggle:checked ~ label .drop2 {
@@ -614,6 +628,8 @@ footer {
       -ms-transform: rotate(180deg);
       transform: rotate(180deg);
       color: white; }
+=======
+>>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
   .contact .column1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
