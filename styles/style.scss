@@ -371,11 +371,7 @@ footer {
 			padding-right: 20px;
 			margin-bottom: 5px;
 			border: 1px solid $primary;
-<<<<<<< HEAD
 			transition: 0.5s;
-=======
-			transition: 0.2s;
->>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
 			position: relative;	
 			color: $primary;
 			font-weight: 500;
@@ -387,15 +383,10 @@ footer {
 			color: $primary;
 			position: absolute;
 			right: 15px;
-<<<<<<< HEAD
 			top: 45%;
 			transform: translateY(-50%);
 			transition: 0.7s;
 			font-size: 12px;		
-=======
-			top: 50%;
-			transform: translateY(-50%);			
->>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
 		}
 		input.foodToggle:checked {
 			& ~ ol {
@@ -403,17 +394,11 @@ footer {
 			}
 			& + label h4 {
 				background-color: $primary;
-<<<<<<< HEAD
 				color: $secondary;				
-=======
-				color: $secondary;
-				
->>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
 				span {
 					color: inherit;
 				}
 			}
-<<<<<<< HEAD
 			& ~ label .drop1 {
 				color: $secondary;
 			}
@@ -426,12 +411,6 @@ footer {
 		}
 	}
 
-=======
-		}
-	}
-
-
->>>>>>> a3af82cc80dae095d85a78724acd47b44990469e
 	.contact {
 		.column1 {
 			flex-direction: column;
