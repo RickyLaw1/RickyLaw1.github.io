@@ -390,8 +390,6 @@ header {
     width: calc(50% - 50px);
     margin-bottom: 40px;
     margin-right: 50px; }
-    .menu .food li:hover .item {
-      border-bottom: 1px solid darkred; }
   .menu .item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,10 +399,17 @@ header {
     justify-content: space-between; }
     .menu .item span {
       color: darkred; }
+  .menu .highlight {
+    font-weight: 600; }
   .menu h6 {
     color: darkred; }
   .menu img {
     width: 100px; }
+  .menu i {
+    display: none; }
+
+input.foodToggle {
+  display: none; }
 
 .contact {
   margin: auto;
@@ -558,12 +563,57 @@ footer {
   .menu .wrapper {
     padding: 0; }
     .menu .wrapper ol {
-      padding: 0 10px; }
+      padding: 0 10px;
+      display: none; }
     .menu .wrapper .food li {
       margin-right: 0;
+      margin-bottom: 25px;
       width: 100%; }
     .menu .wrapper img {
-      width: 60px; }
+      width: 60px;
+      display: none; }
+    .menu .wrapper h4 {
+      font-size: 18px;
+      padding: 10px;
+      padding-right: 20px;
+      margin-bottom: 5px;
+      border: 1px solid darkred;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      position: relative;
+      color: darkred;
+      font-weight: 500; }
+    .menu .wrapper i {
+      display: inline-block; }
+    .menu .wrapper .food i {
+      color: darkred;
+      position: absolute;
+      right: 15px;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s;
+      font-size: 12px; }
+    .menu .wrapper input.foodToggle:checked ~ ol {
+      display: block; }
+    .menu .wrapper input.foodToggle:checked + label h4 {
+      background-color: darkred;
+      color: white; }
+      .menu .wrapper input.foodToggle:checked + label h4 span {
+        color: inherit; }
+    .menu .wrapper input.foodToggle:checked ~ label .drop1 {
+      color: white; }
+    .menu .wrapper input.foodToggle:checked ~ label .drop2 {
+      top: calc(50% - 4px);
+      right: 15px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      color: white; }
   .contact .column1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
