@@ -305,34 +305,44 @@ header {
   .about label {
     top: -70px;
     right: 0;
+    position: absolute; }
+  .about h5 {
     position: absolute;
-    color: darkred;
+    top: -70px;
+    right: 45px;
+    color: darkred; }
+  .about .switch {
+    height: 15px;
+    width: 36px;
+    border-radius: 10px;
+    background-color: darkred; }
+  .about .switcher {
+    position: absolute;
+    top: -3px;
+    height: 20px;
+    width: 20px;
+    display: block;
     border: 1px solid darkred;
-    padding: 5px; }
-  .about .toggle1 {
-    right: 100px; }
+    background-color: white;
+    border-radius: 50%;
+    z-index: 10;
+    -webkit-transition: 0.15s;
+    -o-transition: 0.15s;
+    transition: 0.15s; }
   .about .toggle {
     display: none; }
   .about .finnish {
-    display: none; }
-  .about input#toggle1:checked ~ .finnish {
     display: block; }
-  .about input#toggle1:checked + label {
-    background-color: darkred;
-    color: white;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
+  .about input#toggle1:checked ~ .finnish {
+    display: none; }
+  .about input#toggle1:checked ~ .english {
+    display: block; }
+  .about input#toggle1:checked ~ label .switcher {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px); }
   .about .english {
     display: none; }
-  .about input#toggle2:checked ~ .english {
-    display: block; }
-  .about input#toggle2:checked + label {
-    background-color: darkred;
-    color: white;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
 
 .container {
   padding-bottom: 100px; }
@@ -555,11 +565,12 @@ footer {
 @media (max-width: 590px) {
   .container img {
     height: 350px; }
-  .about .toggle1 {
-    top: -84px;
-    right: 0px; }
-  .about .toggle2 {
-    top: -50px; }
+  .about label {
+    top: -39px; }
+  .about h5 {
+    top: -38px;
+    right: 40px;
+    font-size: 12px; }
   .menu .wrapper {
     padding: 0; }
     .menu .wrapper ol {
@@ -608,7 +619,7 @@ footer {
     .menu .wrapper input.foodToggle:checked ~ label .drop1 {
       color: white; }
     .menu .wrapper input.foodToggle:checked ~ label .drop2 {
-      top: calc(50% - 4px);
+      top: calc(50% - 5px);
       right: 15px;
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);

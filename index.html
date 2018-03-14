@@ -37,17 +37,21 @@
 			<div class="left">
 				<h3>About</h3>
 				<div class="description">
-					<input type="radio" id="toggle1" name="toggle" class="toggle" checked="true">
-					<label for="toggle1" class="toggle1"><h5>FINNISH</h5></label>
+					<input type="checkbox" id="toggle1" name="toggle" class="toggle">					
+					<label for="toggle1" class="switch" >
+						<span class="switcher"></span>
+					</label>
 					<div class="finnish">
+						<h5>FINNISH</h5>
 						<p>Xiang Long on vuonna 1996 perustettu perheyritys. Perinteikäs ravintola toimii nyt kolmannessa toimipisteessään Rovaniemen keskustassa.
 						</p>
 						<p>Nimi Xiang Long tarkoittaa onnea ja iloa tuottavaa lohikäärmettä. Liki kahden vuosikymmenen ajan ravintolan ylpeytenä onkin ollut tuottaa makuelämyksiä ja iloa niin paikallisille asukkaille kuin matkailijoille ympäri maailmaa.</p>
 						<p>Tervetuloa nauttimaan!</p>
 					</div>
-					<input type="radio" id="toggle2" name="toggle" class="toggle">
-					<label for="toggle2" class="toggle2"><h5>ENGLISH</h5></label>
+					<!-- <input type="radio" id="toggle2" name="toggle" class="toggle"> -->
+					<label for="toggle2" class="toggle2"></label>
 					<div class="english">
+						<h5>ENGLISH</h5>
 						<p> Xiang Long is a family based business that was started in 1996. This traditional restaurant has moved twice, and is currently at its third location in the city center of Rovaniemi.</p>
 						<p>The name Xiang Long means a lucky and happiness bringing dragon. For almost two decades, this restaurant has proudly brought joy with authentic Chinese flavors to its local customers and visitors from around the world.</p>
 						<p>We welcome you and hope you enjoy your stay with us!</p>
@@ -870,16 +874,16 @@
 	    $(function() {
 	    	$('.gallery').flickity({
            		wrapAround: true, 
-           		contain: true, 
+           		contain: true,
+           		lazyLoad: true,
            		autoPlay: 5000
 	        });
-	        if ($(window).width() < 590) {
-
-	        }
+	        if ($(window).width() < 590) {}
 	        else {
 	        	$('.menuGallery').flickity({
 	           		wrapAround: true, 
 	           		adaptiveHeight: true,
+	           		lazyLoad: true
 		        });
 	        }
 

@@ -73,41 +73,51 @@ header {
 		top: -70px;
 		right: 0;
 		position: absolute;
-		color: $primary;
-		border: 1px solid $primary;
-		padding: 5px;
 	}
-	.toggle1 {
-		right: 100px;
+	h5 {
+		position: absolute;
+		top: -70px;
+		right: 45px;
+		color: $primary;
+	}
+	.switch {
+		height: 15px;
+		width: 36px;
+		border-radius: 10px;
+		background-color: $primary;
+	}
+	.switcher {
+		position: absolute;
+		top: -3px;
+		height: 20px;
+		width: 20px;
+		display: block;
+		border: 1px solid $primary;
+		background-color: $secondary;
+		border-radius: 50%;
+		z-index: 10;
+		transition: 0.15s;
+
 	}
 	.toggle {
 		display: none;
 	}
 	.finnish {
-		display: none;
+		display: block;
 	}
 	input#toggle1:checked {
 		& ~ .finnish {
+			display: none;
+		}
+		& ~ .english {
 			display: block;
 		}
-		& + label {
-			background-color: $primary;
-			color: $secondary;
-			transition: 0.2s;
+		& ~ label .switcher {
+			transform: translateX(15px);
 		}
 	}
 	.english {
 		display: none;
-	}
-	input#toggle2:checked {
-		& ~ .english {
-			display: block;
-		}
-		& + label {
-			background-color: $primary;
-			color: $secondary;
-			transition: 0.2s;
-		}
 	}
 }
 
@@ -342,12 +352,13 @@ footer {
 		}
 	}
 	.about {
-		.toggle1 {
-			top: -84px;
-			right: 0px;
+		label {
+			top: -39px;
 		}
-		.toggle2 {
-			top: -50px;
+		h5 {
+			top: -38px;
+			right: 40px;
+			font-size: 12px;
 		}
 	}
 	.menu .wrapper {
@@ -403,7 +414,7 @@ footer {
 				color: $secondary;
 			}
 			& ~ label .drop2 {
-				top: calc(50% - 4px);
+				top: calc(50% - 5px);
 				right: 15px;
 				transform: rotate(180deg);
 				color: $secondary;
