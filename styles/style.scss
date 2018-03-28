@@ -17,6 +17,8 @@ ul {
 	color: $primary;
 }
 
+
+// Header Section
 header {
 	background: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(../assets/Main.jpg);
 	background-size: cover;
@@ -97,7 +99,6 @@ header {
 		border-radius: 50%;
 		z-index: 10;
 		transition: 0.15s;
-
 	}
 	.toggle {
 		display: none;
@@ -352,6 +353,7 @@ footer {
 		}
 	}
 	.about {
+		padding: 40px 5%;
 		label {
 			top: -39px;
 		}
@@ -421,7 +423,6 @@ footer {
 			}
 		}
 	}
-
 	.contact {
 		.column1 {
 			flex-direction: column;

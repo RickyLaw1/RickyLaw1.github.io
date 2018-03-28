@@ -803,14 +803,8 @@
 			<h3>Contact</h3>
 			<div class="information">
 				<div class="column2">
-					<!-- <div class="address">
-						<h5>Address :</h5>
-						<p>Koskikatu 2, </p>
-						<p>96200 Rovaniemi, </p>
-						<p>Finland</p> -->
-					<!-- </div> -->
 					<iframe class="non-mobile" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=xiang%20long%20finland&key=AIzaSyBigXshwyrupXyjgEaSBLTZ7NFreTonmHk" allowfullscreen></iframe>
-					<iframe class="mobile"  width="320" height="240" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=xiang%20long%20finland&key=AIzaSyBigXshwyrupXyjgEaSBLTZ7NFreTonmHk" allowfullscreen></iframe>
+					<iframe class="mobile"  height="240" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=xiang%20long%20finland&key=AIzaSyBigXshwyrupXyjgEaSBLTZ7NFreTonmHk" allowfullscreen></iframe>
 				</div>
 				<div class="column1">
 					<div class="phone part">
@@ -878,13 +872,13 @@
            		lazyLoad: true,
            		autoPlay: 5000
 	        });
-	        if ($(window).width() < 590) {}
-	        else {
+	        if ($(window).width() > 590) {
 	        	$('.menuGallery').flickity({
 	           		wrapAround: true, 
 	           		adaptiveHeight: true,
 	           		lazyLoad: true
 		        });
+		        $(window).resize(function(){location.reload();});
 	        }
 
 	        $("a").smoothScroll();

@@ -565,12 +565,14 @@ footer {
 @media (max-width: 590px) {
   .container img {
     height: 350px; }
-  .about label {
-    top: -39px; }
-  .about h5 {
-    top: -38px;
-    right: 40px;
-    font-size: 12px; }
+  .about {
+    padding: 40px 5%; }
+    .about label {
+      top: -39px; }
+    .about h5 {
+      top: -38px;
+      right: 40px;
+      font-size: 12px; }
   .menu .wrapper {
     padding: 0; }
     .menu .wrapper ol {
