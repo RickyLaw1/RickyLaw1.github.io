@@ -35,12 +35,15 @@ header {
 		padding: 6%;
 		border-bottom: 1px solid $third;
 		transition: 0.2s;
-		&:hover {
+		&:hover { 
 			border-bottom: 1px solid $secondary;
 		}
 	}
 	li {
-		width: 200px;
+		width: 300px;
+	}
+	h5 {
+		text-shadow: #320303 0px 1px 1px;
 	}
 
 }
@@ -237,6 +240,9 @@ input.foodToggle {
 			margin-left: 30px;
 		}
 	}
+	.time {
+		font-weight: bold;
+	}
 	i {
 		border: 1px solid $primary;
 		border-radius: 50%;
@@ -273,6 +279,9 @@ footer {
 		float: left;
 		text-align: center;
 	}
+	.social:hover {
+		border: 1px solid white;
+	}
 	h4 {
 		font-family: 'Playfair Display', serif;
 		font-weight: 300;
@@ -297,7 +306,7 @@ footer {
 		}
 		li {
 			margin: 0;
-			width: 200px;
+			width: 300px;
 		}
 	}
 	.about {
@@ -347,6 +356,12 @@ footer {
 	}
 }
 @media (max-width: 590px) {
+	header {
+		li {
+			width: 200px;
+		}
+	}
+
 	.container {
 		img {
 			height: 350px;

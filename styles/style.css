@@ -184,9 +184,9 @@ h1 {
 
 h2 {
   font-size: 75px;
-  font-weight: 300;
   color: white;
-  text-shadow: 0 0 100px white;
+  font-family: SimSun;
+  text-shadow: 0 0 16px white;
   letter-spacing: 20px; }
 
 h3 {
@@ -281,7 +281,9 @@ header {
     header a:hover {
       border-bottom: 1px solid white; }
   header li {
-    width: 200px; }
+    width: 300px; }
+  header h5 {
+    text-shadow: #320303 0px 1px 1px; }
 
 .title {
   text-align: center; }
@@ -454,6 +456,8 @@ input.foodToggle {
       position: relative; }
     .contact .part p {
       margin-left: 30px; }
+  .contact .time {
+    font-weight: bold; }
   .contact i {
     border: 1px solid darkred;
     border-radius: 50%;
@@ -493,6 +497,8 @@ footer {
     width: 33.33%;
     float: left;
     text-align: center; }
+  footer .social:hover {
+    border: 1px solid white; }
   footer h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 300;
@@ -516,7 +522,7 @@ footer {
     align-items: center; }
   header li {
     margin: 0;
-    width: 200px; }
+    width: 300px; }
   .about .left, .about .right {
     width: 100%; }
   .about .right {
@@ -563,6 +569,8 @@ footer {
       display: none; } }
 
 @media (max-width: 590px) {
+  header li {
+    width: 200px; }
   .container img {
     height: 350px; }
   .about {
